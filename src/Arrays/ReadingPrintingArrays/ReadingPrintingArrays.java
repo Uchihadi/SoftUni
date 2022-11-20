@@ -1,4 +1,4 @@
-package Arrays;
+package Arrays.ReadingPrintingArrays;
 
 import java.util.Scanner;
 
