@@ -1,4 +1,4 @@
-package DataTypes.Arrays.ForEachLoop;
+package Arrays.ForEachLoop;
 
 import java.util.Arrays;
 import java.util.Scanner;

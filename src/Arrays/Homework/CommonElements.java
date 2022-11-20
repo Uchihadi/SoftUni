@@ -1,4 +1,4 @@
-package DataTypes.Arrays.Homework;
+package Arrays.Homework;
 
 import java.util.Scanner;
 
