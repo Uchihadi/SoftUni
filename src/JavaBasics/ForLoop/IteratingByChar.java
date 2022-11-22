@@ -10,7 +10,7 @@ public class IteratingByChar {
         char end = scanner.nextLine().charAt(0); //only the first letter from this end
 
         for (char ch = start; ch <= end; ch++){
-            // Character --> System.out.print (To print out in Arrays)
+            // Character --> System.out.print (To print out in JavaFundamentals.Arrays)
             System.out.print(ch + " ");
         }
     }
