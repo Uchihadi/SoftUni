@@ -2,7 +2,7 @@ package LeetCodeJava;
 
 import javax.swing.tree.TreeNode;
 
-public class TreeNode {
+class TreeNode {
     int val;
     TreeNode left;
     TreeNode right;
@@ -12,10 +12,7 @@ public class TreeNode {
     }
 }
 
-// Given an array of Integers preorder, representing the preorder traversal of a Binary Search Tree,
-// construct the tree and return its roots
-
-public class ConstructBinarySearchTree {
+class ConstructBinarySearchTree {
     public TreeNode BSTFromPreorder(int[] preorder) {
         return helper (preorder, 0, preorder.length - 1);
     }
