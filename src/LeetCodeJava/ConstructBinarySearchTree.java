@@ -1,17 +1,20 @@
 package LeetCodeJava;
 
 import javax.swing.tree.TreeNode;
+import java.util.Enumeration;
 
-class TreeNode {
+public class TreeNode {
     int val;
     TreeNode left;
     TreeNode right;
-
-    TreeNode(int x) {
-        val = x;
+    TreeNode() {}
+    TreeNode(int val) { this.val = val; }
+    TreeNode(int val, TreeNode left, TreeNode right) {
+        this.val = val;
+        this.left = left;
+        this.right = right;
     }
 }
-
 class ConstructBinarySearchTree {
     public TreeNode BSTFromPreorder(int[] preorder) {
         return helper (preorder, 0, preorder.length - 1);
