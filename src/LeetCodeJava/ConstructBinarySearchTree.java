@@ -17,7 +17,10 @@ public class TreeNode {
 }
 class ConstructBinarySearchTree {
     public TreeNode BSTFromPreorder(int[] preorder) {
+        // BSTFromPreorder takes in an array of Integers as Input, representing preorder traversal of BST
         return helper (preorder, 0, preorder.length - 1);
+        // It calls helper function 'helper' --> recursive function that constructs the BST
+        // 'helper' function takes in 3 arguments, the preorder array, lower bound and an upper bound
     }
 
     private TreeNode helper (int[] preorder, int start, int end) {
