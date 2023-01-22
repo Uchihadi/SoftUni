@@ -16,4 +16,5 @@ public class ContainsDuplicate {
 
     // Map vs HashMap --> Common Map Implementations
     // Map is an interface, an abstract that can define how something can be used. HashMap is an implementation of that Interface
+    // Key is String/Name using containsKey, Value is an Integer using containsValue
 }
