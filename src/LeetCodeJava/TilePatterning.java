@@ -9,17 +9,17 @@ public class TilePatterning {
         return dfs(count);
     }
 
-    private static int dfs(int[] arr) {
-        int sum = 0;
-        for (int i = 0; i < 26; i++) {
+    private static int dfs(int[] arr) { // Function DFS takes Array as Inputs, where each element of arrays represents number of occurrences
+        int sum = 0; 
+        for (int i = 0; i < 26; i++) { // Generates all possible permutations of letters
             if (arr[i] == 0) {
                 continue;
             }
-            sum++;
+            sum++; // Increments a Counter Variable 'sum' by one
             arr[i]--;
             sum += dfs(arr);
             arr[i]++;
         }
-        return sum;
+        return sum; // Final value of sum is returned as Output of the Function
     }
 }
