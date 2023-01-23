@@ -49,7 +49,6 @@ public class HorizontalVerticalBars {
         // Sort both list in
         // ascending order
         Arrays.sort(list1);
-        +
         Arrays.sort(list2);
 
         int maxH = 0, p1 = 0, maxV = 0, p2 = 0;
