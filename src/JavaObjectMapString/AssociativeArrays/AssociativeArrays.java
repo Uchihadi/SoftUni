@@ -19,7 +19,7 @@ public class AssociativeArrays {
         System.out.println(airplanes.containsValue(130)); // True
         System.out.println();
 
-        // Iteration and access to the hashmap keys with its values
+        // Iteration and access to the hashmap keys %s with its values %d, HashMap Collections
         for (Map.Entry<String, Integer> entry : airplanes.entrySet()) {
             System.out.printf("%s -> %d%n", entry.getKey(), entry.getValue());
         }
