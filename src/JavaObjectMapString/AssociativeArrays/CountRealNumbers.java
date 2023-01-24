@@ -10,10 +10,10 @@ public class CountRealNumbers {
 
         TreeMap <Integer, Integer> count = new TreeMap<>(); // Initialising Count of Keys on TreeMap
         for (int num:nums) {
-            if (!count.containsKey(num)) {
+            if (!count.containsKey(num)) { // Checks if it has a Key
                 count.put(num, 0);
             }
-            count.put(num, count.get(num) + 1);
+            count.put(num, count.get(num) + 1); // For each number input, the count adds 1 value to the TreeMap Keys
         }
 
         for (Map.Entry<Integer, Integer> entry : count.entrySet()){
