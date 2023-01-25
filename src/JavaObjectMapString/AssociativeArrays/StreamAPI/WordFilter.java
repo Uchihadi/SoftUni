@@ -1,7 +1,18 @@
 package JavaObjectMapString.AssociativeArrays.StreamAPI;
 
+import java.util.Arrays;
+import java.util.Scanner;
+
 public class WordFilter {
     public static void main(String[] args) {
-        
+        Scanner scanner = new Scanner(System.in);
+
+        String[] words = Arrays.stream(scanner.nextLine().split(" "))
+                .filter(word -> word.length() % 2 == 0) // Only Reads words whose length are Even Number
+                .toArray(String[]::new); // Adds to the new String array
+
+        for (String word : words) {
+            System.out.println(word);
+        }
     }
 }
