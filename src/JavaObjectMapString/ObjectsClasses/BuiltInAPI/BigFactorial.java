@@ -7,7 +7,7 @@ public class BigFactorial {
     public static void main (String[] args) {
         Scanner scanner = new Scanner(System.in);
         int n = Integer.parseInt(scanner.nextLine());
-        BigInteger result = new BigInteger(String.valueOf(1));
+        BigInteger result = new BigInteger(String.valueOf(1)); // For Result calling Big Integer constructor
 
         for (int i = 1; i <= n; i++) {
             result = result.multiply(BigInteger.valueOf(Integer.parseInt(String.valueOf(i))));
